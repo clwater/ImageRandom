@@ -1,7 +1,11 @@
 package main
 
-import "fmt"
-
+import (
+	"ImageRandom/control"
+	"log"
+)
 func main() {
-	fmt.Print("Image Random")
+	log.Println("main")
+	log.Println(control.Random())
+
 }
