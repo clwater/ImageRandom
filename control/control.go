@@ -1,19 +1,12 @@
 package control
 
 import (
-	"ImageRandom/source_local"
+	"ImageRandom/source"
 	"log"
 )
 
 var isInit = false
 
-//
-//  InitGoogleEarthImage
-//  @Description: 初始化静态数据信息（Google Earth）
-//
-func InitGoogleEarthImage()  {
-	google_earth.Init()
-}
 
 //
 //  Init
@@ -21,7 +14,7 @@ func InitGoogleEarthImage()  {
 //
 func Init()  {
 	log.Println("init")
-	InitGoogleEarthImage()
+	//初始化静态数据信息（Google Earth）
 }
 
 //
