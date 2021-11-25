@@ -2,11 +2,12 @@ package handler
 
 import (
 	"ImageRandom/control"
-	"fmt"
 	"net/http"
 )
 
-func Handler(w http.ResponseWriter, r *http.Request) {
+func Handler(w http.ResponseWriter, req *http.Request) {
 	image := control.Random()
-	fmt.Fprintf(w, "" + image)
+	//fmt.Fprintf(w, "" + image)
+
+	http.Redirect(w, req, image, http.StatusTemporaryRedirect)
 }
